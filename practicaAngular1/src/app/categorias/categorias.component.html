@@ -1,0 +1,9 @@
+<div class="padre">
+    <div class="cat" *ngFor="let categorias of categorias">
+        <img [src]="categorias.getImagen()" class="card-img-top" [alt]="categorias.getId()">
+        <div class="card-body">
+        <h5 class="card-title">{{ categorias.getTitulo() }}</h5>
+        <a [routerLink]="['coleccion']" class="btn btn-primary">Ir a Colección</a>
+        </div>
+    </div>
+</div>

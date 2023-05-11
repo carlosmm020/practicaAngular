@@ -1,0 +1,6 @@
+<div class="producto" *ngIf="coleccion" (click)="navegarAFicha(coleccion.getTitulo())">
+    <img [src]="coleccion.getImagen()" [alt]="coleccion.getId()">
+    <h4>{{coleccion.getTitulo()}}</h4>
+    <p [ngClass]="{'precio-tachado': coleccion.getPrecioOferta()}">Precio: {{coleccion.getPrecio() | number:'1.2':'es-ES'}} €</p>
+    <p class="oferta">{{coleccion.getPrecioOferta() | number:'1.2':'es-ES'}}</p>
+</div>

@@ -1,0 +1,16 @@
+
+.producto{
+    display: inline-block;
+    text-align: center;
+  }
+  
+.precio-tachado{
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: line-through;
+  }
+  
+.oferta{
+    display: inline-block;
+    color: red;
+  }

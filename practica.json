@@ -1,0 +1,194 @@
+{
+  "uuid": "a7854bd6-08e5-4246-80ac-b96745fce019",
+  "lastMigration": 27,
+  "name": "Practica",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "b24e636d-4640-47c7-ba3e-e4eea34eefb1",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "carousel",
+      "responses": [
+        {
+          "uuid": "ae6d4351-b2d9-4446-8b6f-bf8820a6eaec",
+          "body": "    [\n  { \n    \"id\": 1,\n    \"src\": \"https://via.placeholder.com/800x300/007bff/ffffff?text=First+Slide\", \n    \"alt\": \"Primer Slide\" \n  },\n  { \n    \"id\": 2,\n    \"src\": \"https://via.placeholder.com/800x300/28a745/ffffff?text=Second+Slide\", \n    \"alt\": \"Segundo Slide\" \n  },\n  { \n    \"id\": 3,\n    \"src\": \"https://via.placeholder.com/800x300/dc3545/ffffff?text=Third+Slide\", \n    \"alt\": \"Tercer Slide\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a2273577-afee-4a8e-8c6b-258f304327e1",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "banner",
+      "responses": [
+        {
+          "uuid": "4631b3ca-ca65-4be8-8245-db88e4b7d965",
+          "body": "  [\n  {\n    \"id\": 1,\n    \"titulo\": \"Banner 1\",\n    \"imagen\": \"https://via.placeholder.com/300x300/007bff/ffffff?text=First+Banner\"\n  },\n  {\n    \"id\": 2,\n    \"titulo\": \"Banner 2\",\n    \"imagen\": \"https://via.placeholder.com/300x300/28a745/ffffff?text=Second+Banner\"\n  },\n  {\n    \"id\": 3,\n    \"titulo\": \"Banner 3\",\n    \"imagen\": \"https://via.placeholder.com/300x300/dc3545/ffffff?text=Third+Banner\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5cceddb5-3406-4126-82b0-00688e929319",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "categorias",
+      "responses": [
+        {
+          "uuid": "580936d7-9f32-4f8e-b91c-6359190cfa24",
+          "body": "[\n  {\n    \"id\": 1,\n    \"titulo\": \"Gorras\",\n    \"imagen\": \"https://via.placeholder.com/200x300/007bff/ffffff?text=Gorras\"\n  },\n  {\n    \"id\": 2,\n    \"titulo\": \"camisetas\",\n    \"imagen\": \"https://via.placeholder.com/200x300/FFFF00/ffffff?text=Camisetas\"\n  },\n  {\n    \"id\": 1,\n    \"titulo\": \"Pantalones\",\n    \"imagen\": \"https://via.placeholder.com/200x300/3A01DF/ffffff?text=Pantalones\"\n  },\n  {\n    \"id\": 1,\n    \"titulo\": \"Zapatillas\",\n    \"imagen\": \"https://via.placeholder.com/200x300/298A08/ffffff?text=Zapatillas\"\n  },\n  {\n    \"id\": 1,\n    \"titulo\": \"Complementos\",\n    \"imagen\": \"https://via.placeholder.com/200x300/FA5882/ffffff?text=Complementos\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "ec5ef9ba-69cd-4d6b-9272-2e8bf095bbce",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "coleccion",
+      "responses": [
+        {
+          "uuid": "cc7980bc-d63d-4ffc-ae70-10c0f6df7a89",
+          "body": "[\n  {\n    \"id\": 1,\n    \"titulo\": \"Vestido Rosa\",\n    \"imagen\": \"https://via.placeholder.com/200x300/FE2EF7/ffffff?text=Vestido\",\n    \"precio\": 10\n  },\n  \n  {\n    \"id\": 2,\n    \"titulo\": \"Chaqueta negra\",\n    \"imagen\": \"https://via.placeholder.com/200x300/000000/ffffff?text=Chaqueta\",\n    \"precio\": 950,\n    \"precioOferta\": 499\n  },\n  \n  {\n    \"id\": 3,\n    \"titulo\": \"Pantalón marrón\",\n    \"imagen\": \"https://via.placeholder.com/200x300/61380B/ffffff?text=Pantalón\",\n    \"precio\": 60\n  },\n  \n  {\n    \"id\": 4,\n    \"titulo\": \"Camisa amarilla\",\n    \"imagen\": \"https://via.placeholder.com/200x300/FFFF00/ffffff?text=Camisa\",\n    \"precio\": 12,\n    \"precioOferta\": 4\n  },\n  \n  {\n    \"id\": 5,\n    \"titulo\": \"Zapatos verdes\",\n    \"imagen\": \"https://via.placeholder.com/200x300/01DF01/ffffff?text=Zapatos\",\n    \"precio\": 40,\n    \"precioOferta\": 28\n  },\n  \n  {\n    \"id\": 6,\n    \"titulo\": \"Reloj gris\",\n    \"imagen\": \"https://via.placeholder.com/200x300/BDBDBD/ffffff?text=Reloj\",\n    \"precio\": 200\n  },\n  \n  {\n    \"id\": 7,\n    \"titulo\": \"Gafas naranjas\",\n    \"imagen\": \"https://via.placeholder.com/200x300/FF8000/ffffff?text=Gafas\",\n    \"precio\": 150\n  },\n  \n  {\n    \"id\": 8,\n    \"titulo\": \"Abrigo azul\",\n    \"imagen\": \"https://via.placeholder.com/200x300/2E2EFE/ffffff?text=Abrigo\",\n    \"precio\": 45\n  }  \n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "b24e636d-4640-47c7-ba3e-e4eea34eefb1"
+    },
+    {
+      "type": "route",
+      "uuid": "a2273577-afee-4a8e-8c6b-258f304327e1"
+    },
+    {
+      "type": "route",
+      "uuid": "5cceddb5-3406-4126-82b0-00688e929319"
+    },
+    {
+      "type": "route",
+      "uuid": "ec5ef9ba-69cd-4d6b-9272-2e8bf095bbce"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

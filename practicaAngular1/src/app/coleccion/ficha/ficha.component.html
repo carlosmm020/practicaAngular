@@ -1,0 +1,22 @@
+<div class="fichapadre" *ngIf="coleccion">
+    <div class="left">
+      <img [src]="coleccion.getImagen" [alt]="coleccion.getTitulo">
+    </div>
+    <div class="right">
+      <h2>{{coleccion.getTitulo()}}</h2>
+      <p>{{coleccion.getPrecio()}}</p>
+      <img [src]="coleccion.getImagen" [alt]="coleccion.getTitulo">
+      <form>
+        <label for="talla">Talla:</label>
+        <select id="talla" name="talla">
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+        </select>
+      </form>
+      <button>Añadir al carrito</button>
+    </div>
+  </div>
+  

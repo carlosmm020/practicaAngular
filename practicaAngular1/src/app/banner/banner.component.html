@@ -1,0 +1,8 @@
+<div class="contenedor">
+    <div class="ban" style="width: 18rem;" *ngFor="let banner of banners">
+        <img [src]="banner.getImagen()" class="card-img-top" [alt]="banner.getId()">
+        <div class="card-body">
+            <p>{{ banner.getTitulo() }}</p>
+        </div>
+    </div>
+</div>
